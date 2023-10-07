@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/views/co_zalatwic.dart';
 import 'package:u_nas_dziala_project/views/home_page.dart';
 
 void main() {
@@ -22,5 +23,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
