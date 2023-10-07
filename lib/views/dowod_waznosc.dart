@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class WyrobienieDowodu extends StatefulWidget {
-  const WyrobienieDowodu({super.key});
+class DowodWaznosc extends StatefulWidget {
+  const DowodWaznosc({super.key});
 
   @override
-  State<WyrobienieDowodu> createState() => _HomePageState();
+  State<DowodWaznosc> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<WyrobienieDowodu> {
+class _HomePageState extends State<DowodWaznosc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,15 +32,15 @@ class _HomePageState extends State<WyrobienieDowodu> {
               style: TextStyle(
                 fontSize: 35,
               ),
-              'Wyrobienie dowodu osobistego',
+              'Dowód osobisty stracil waznosc',
             ),
             const SizedBox(
-              height: 80,
+              height: 50,
             ),
             Container(
               padding: EdgeInsets.all(16.0),
               child: const Text(
-                'Tekst, który może być bardzo długi i sam się będzie zawijać na kolejne linie w miarę potrzeb. Możesz dodać tutaj dowolną ilość tekstu.',
+                'Jeżeli twój dowód tożsamości stracił ważność musisz udać się do Wydziału Ewidencji i Spraw Obywatelskich w celu wyrobienia nowego dokumentu tożsamości.',
                 style: TextStyle(
                   fontSize: 16,
                 ),
@@ -69,7 +69,7 @@ class _HomePageState extends State<WyrobienieDowodu> {
                     ),
                   ),
                   child: const Text(
-                    'Zajmij miejsce w kolejce',
+                    'Wyrobienie dowodu tozsamości ',
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 18.0, // Dostosuj rozmiar tekstu
@@ -127,7 +127,7 @@ class _HomePageState extends State<WyrobienieDowodu> {
                     ),
                   ),
                   child: const Text(
-                    'Dokumenty do pobrania',
+                    'Pomoc',
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 18.0, // Dostosuj rozmiar tekstu
