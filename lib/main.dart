@@ -3,7 +3,7 @@ import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_dokumenty.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_nieruchomosc.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_pojazdy.dart';
-import 'package:u_nas_dziala_project/views/dowod_osobisty/dokumentacja_dowod.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/uzupelnienie_dowod.dart';
 import 'package:u_nas_dziala_project/views/home_page.dart';
 import 'package:u_nas_dziala_project/views/zalatwic_sprawe.dart';
 
