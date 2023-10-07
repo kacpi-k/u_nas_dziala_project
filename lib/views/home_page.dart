@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/colors.dart';
 
+final test = 1;
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
