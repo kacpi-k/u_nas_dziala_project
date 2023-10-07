@@ -5,6 +5,8 @@ import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_nieruchomosc.
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_pojazdy.dart';
 import 'package:u_nas_dziala_project/views/dowod_osobisty/uzupelnienie_dowod.dart';
 import 'package:u_nas_dziala_project/views/home_page.dart';
+import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/nieruchomo%C5%9Bci_zalatwic.dart';
+import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/podatek_nieruchomosc.dart';
 import 'package:u_nas_dziala_project/views/zalatwic_sprawe.dart';
 
 void main() {
