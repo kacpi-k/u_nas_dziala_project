@@ -17,7 +17,10 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Center(
-          child: Text('Mobilny Informator'),
+          child: Text(
+            'Mobilny Informator',
+            textAlign: TextAlign.center,
+          ),
         ),
         actions: [
           IconButton(
@@ -66,9 +69,28 @@ class _HomePageState extends State<HomePage> {
           ),
           Row(
             children: [
+              const SizedBox(
+                width: 20,
+              ),
               Container(
-                margin: const EdgeInsets.only(left: 63),
-                child: const Text('test'),
+                margin: const EdgeInsets.only(top: 10, left: 40),
+                child: const Text(
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                  ),
+                  'Chcę załatwić\n sprawę',
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 0, left: 65),
+                child: const Text(
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                  ),
+                  'Pomoc',
+                ),
               ),
             ],
           ),
@@ -99,7 +121,34 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ],
-          )
+          ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 20,
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 10, left: 60),
+                child: const Text(
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                  ),
+                  'Kontakt',
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 10, left: 80),
+                child: const Text(
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                  ),
+                  'Informacje',
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
