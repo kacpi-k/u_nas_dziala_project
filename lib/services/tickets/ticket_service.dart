@@ -7,6 +7,7 @@ class TicketService {
   static final _ticketQueue = Queue<int>();
   static int _ticketCounter = 0;
   static int _queueElementsCounter = 0;
+  static int _loopCounterTest = 0;
 
   static void addToTicketQueue() {
     _ticketQueue.addLast(1);
@@ -28,17 +29,16 @@ class TicketService {
   static void queueSimulator() {
     Random rand = Random();
     int randomNumber = rand.nextInt(2);
-    Timer.periodic(const Duration(seconds: 2), (Timer t) {
-      for (int i = 0; i < 50; i++) {
+    while (_loopCounterTest < 5) {
+      Timer.periodic(const Duration(seconds: 2), (Timer t) {
         if (randomNumber != 1) {
           addToTicketQueue();
         } else {
           removeFromTicketQueue();
         }
-        dev.log(
-            'Przed toba w kolejce: $_queueElementsCounter\nIle biletow: $_ticketCounter');
-      }
-    });
+        _loopCounterTest += 1;
+      });
+    }
   }
 
   static int getTicketCounter() {
