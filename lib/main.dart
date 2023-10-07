@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_dokumenty.dart';
+import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_nieruchomosc.dart';
+import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_pojazdy.dart';
 import 'package:u_nas_dziala_project/views/home_page.dart';
 import 'package:u_nas_dziala_project/views/zalatwic_sprawe.dart';
 
@@ -21,7 +24,12 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       home: const HomePage(),
-      routes: {zalatwicSpraweRoute: (context) => const ZalatwiadnieSprawy()},
+      routes: {
+        zalatwicSpraweRoute: (context) => const ZalatwiadnieSprawy(),
+        coZalatwicPojazdy: (context) => const Pojazdy(),
+        coZalatwicDokumenty: (context) => const Dokumenty(),
+        coZalatwicNieruchomosci: (context) => const Nieruchomosci(),
+      },
     );
   }
 }

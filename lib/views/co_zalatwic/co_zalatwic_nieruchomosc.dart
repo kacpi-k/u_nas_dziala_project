@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Zalatwianie extends StatefulWidget {
-  const Zalatwianie({super.key});
+class Nieruchomosci extends StatefulWidget {
+  const Nieruchomosci({super.key});
 
   @override
-  State<Zalatwianie> createState() => _HomePageState();
+  State<Nieruchomosci> createState() => _Nieruchomosci();
 }
 
-class _HomePageState extends State<Zalatwianie> {
+class _Nieruchomosci extends State<Nieruchomosci> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

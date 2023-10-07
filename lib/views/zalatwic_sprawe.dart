@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class ZalatwiadnieSprawy extends StatefulWidget {
   const ZalatwiadnieSprawy({super.key});
@@ -37,11 +38,12 @@ class _HomePageState extends State<ZalatwiadnieSprawy> {
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
+              Navigator.of(context).pushNamed(coZalatwicPojazdy);
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -66,11 +68,12 @@ class _HomePageState extends State<ZalatwiadnieSprawy> {
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
+              Navigator.of(context).pushNamed(coZalatwicDokumenty);
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -97,9 +100,9 @@ class _HomePageState extends State<ZalatwiadnieSprawy> {
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów

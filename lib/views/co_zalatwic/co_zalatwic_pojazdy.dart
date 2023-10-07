@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Zalatwianie extends StatefulWidget {
-  const Zalatwianie({super.key});
+class Pojazdy extends StatefulWidget {
+  const Pojazdy({super.key});
 
   @override
-  State<Zalatwianie> createState() => _HomePageState();
+  State<Pojazdy> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<Zalatwianie> {
+class _HomePageState extends State<Pojazdy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
