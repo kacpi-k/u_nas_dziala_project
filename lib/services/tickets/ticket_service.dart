@@ -36,6 +36,8 @@ class TicketService {
         } else {
           removeFromTicketQueue();
         }
+        dev.log(
+            'Ile osob przed toba chuju: $_queueElementsCounter\nJaki numer biletu chuju: $_ticketCounter');
         _loopCounterTest += 1;
       });
     }

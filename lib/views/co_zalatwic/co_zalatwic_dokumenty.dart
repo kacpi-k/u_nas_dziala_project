@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class Dokumenty extends StatefulWidget {
   const Dokumenty({super.key});
@@ -38,6 +39,7 @@ class _Dokumenty extends State<Dokumenty> {
               onPressed: () {
                 // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                 // Na przykład można dodać nawigację do innej strony.
+                Navigator.of(context).pushNamed(dowodZguba);
               },
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(350, 50),
@@ -96,6 +98,7 @@ class _Dokumenty extends State<Dokumenty> {
               onPressed: () {
                 // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                 // Na przykład można dodać nawigację do innej strony.
+                Navigator.of(context).pushNamed(dowodWaznosc);
               },
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(350, 50),
@@ -154,6 +157,7 @@ class _Dokumenty extends State<Dokumenty> {
               onPressed: () {
                 // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                 // Na przykład można dodać nawigację do innej strony.
+                Navigator.of(context).pushNamed(dowodWyrob);
               },
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(350, 50),
@@ -226,7 +230,7 @@ class _Dokumenty extends State<Dokumenty> {
                 ),
               ),
               child: const Text(
-                'chce otrzymać prawo jazdy',
+                'Chce otrzymać prawo jazdy',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 18.0, // Dostosuj rozmiar tekstu

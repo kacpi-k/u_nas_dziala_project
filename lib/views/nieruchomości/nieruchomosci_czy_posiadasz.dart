@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class NieruchomoscCzyPosiadasz extends StatefulWidget {
   const NieruchomoscCzyPosiadasz({super.key});
@@ -96,6 +97,7 @@ class _HomePageState extends State<NieruchomoscCzyPosiadasz> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(nieruchomoscInfo);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(350, 50),
@@ -110,7 +112,7 @@ class _HomePageState extends State<NieruchomoscCzyPosiadasz> {
                     ),
                   ),
                   child: const Text(
-                    'Uzupeij dokumentacje',
+                    'Uzupełnij dokumentacje',
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 18.0, // Dostosuj rozmiar tekstu

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class NieruchomoscInfo extends StatefulWidget {
   const NieruchomoscInfo({super.key});
@@ -32,7 +33,7 @@ class _HomePageState extends State<NieruchomoscInfo> {
               style: TextStyle(
                 fontSize: 21,
               ),
-              'Wszystkie formularze, które muszą zostać wypełnione aby móc opłacić podatek od posiadanej nieruchomości znajdziesz w zakładce “Podatek od nieruchomości” pod przyciskiem “Dokumenty do pobrania”.',
+              'Wszystkie formularze, które muszą zostać wypełnione, aby móc opłacić podatek od posiadanej nieruchomości znajdziesz w zakładce “Podatek od nieruchomości” pod przyciskiem “Dokumenty do pobrania”.',
             ),
             const SizedBox(
               height: 220,
@@ -43,6 +44,8 @@ class _HomePageState extends State<NieruchomoscInfo> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                        nieruchomoscKupno, (route) => false);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(350, 50),

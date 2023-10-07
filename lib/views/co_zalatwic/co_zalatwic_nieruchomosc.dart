@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class Nieruchomosci extends StatefulWidget {
   const Nieruchomosci({super.key});
@@ -37,6 +38,7 @@ class _Nieruchomosci extends State<Nieruchomosci> {
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
+              Navigator.of(context).pushNamed(nieruchomoscKupno);
             },
             style: ElevatedButton.styleFrom(
               minimumSize: Size(350, 50),
