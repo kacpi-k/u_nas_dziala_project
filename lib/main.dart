@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/views/home_page.dart';
+import 'package:u_nas_dziala_project/views/zalatwic_sprawe.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       home: const HomePage(),
+      routes: {zalatwicSpraweRoute: (context) => const ZalatwiadnieSprawy()},
     );
   }
 }

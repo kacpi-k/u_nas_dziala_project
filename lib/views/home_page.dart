@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/colors.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 final test = 1;
 
@@ -16,11 +17,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text(
-            'Mobilny Informator',
-            textAlign: TextAlign.center,
-          ),
+        centerTitle: true,
+        title: const Text(
+          'Mobilny Informator',
+          textAlign: TextAlign.center,
         ),
         actions: [
           IconButton(
@@ -42,15 +42,24 @@ class _HomePageState extends State<HomePage> {
           Row(
             children: [
               Container(
-                width: 100,
-                height: 100,
-                margin: const EdgeInsets.only(left: 57),
-                decoration: BoxDecoration(
-                  color: greyCustomColor,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Center(
-                  child: Image.asset('icons/sprawa_button_icon.png'),
+                margin: const EdgeInsets.only(
+                    left: 57.0), // Margines od lewej strony
+                child: InkWell(
+                  onTap: () {
+                    // Obsługa kliknięcia przycisku
+                    Navigator.of(context).pushNamed(zalatwicSpraweRoute);
+                  },
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    decoration: BoxDecoration(
+                      color: greyCustomColor,
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    child: Center(
+                      child: Image.asset('icons/sprawa_button_icon.png'),
+                    ),
+                  ),
                 ),
               ),
               Container(
