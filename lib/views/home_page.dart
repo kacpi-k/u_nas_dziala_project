@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/colors.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
-
-final test = 1;
+import 'package:u_nas_dziala_project/services/tickets/ticket_service.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,6 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    TicketService.queueSimulator();
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,

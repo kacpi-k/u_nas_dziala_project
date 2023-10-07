@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_nieruchomosc.dart';
 
 class ZalatwiadnieSprawy extends StatefulWidget {
   const ZalatwiadnieSprawy({super.key});
@@ -98,6 +99,7 @@ class _HomePageState extends State<ZalatwiadnieSprawy> {
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
+              Navigator.of(context).pushNamed(coZalatwicNieruchomosci);
             },
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(350, 50),
