@@ -40,7 +40,7 @@ class _HomePageState extends State<WyrobienieDowodu> {
             Container(
               padding: EdgeInsets.all(16.0),
               child: const Text(
-                'Tekst, który może być bardzo długi i sam się będzie zawijać na kolejne linie w miarę potrzeb. Możesz dodać tutaj dowolną ilość tekstu.',
+                '1. Pobierz i wypełnij wniosek. Przygotuj potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.2. Złóż dokumenty w urzędzie. Szczegóły znajdziesz w sekcji Gdzie składasz wniosek.3. Urzędnik pobierze twoje odciski palców. Na wniosku złóż własnoręczny podpis, który zostanie zamieszczony w dowodzie osobistym.4. Otrzymasz potwierdzenie złożenia wniosku.5. Odbierz gotowy dowód osobisty w urzędzie.',
                 style: TextStyle(
                   fontSize: 16,
                 ),
