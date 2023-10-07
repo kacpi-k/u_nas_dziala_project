@@ -3,7 +3,13 @@ import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_dokumenty.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_nieruchomosc.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_pojazdy.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/dowod_waznosc.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/dowod_zguba.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/wyrobienie_dowodu.dart';
 import 'package:u_nas_dziala_project/views/home_page.dart';
+import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/nieruchomosci_czy_posiadasz.dart';
+import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/nieruchomosci_info.dart';
+import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/podatek_nieruchomosc.dart';
 import 'package:u_nas_dziala_project/views/zalatwic_sprawe.dart';
 
 void main() {
@@ -29,6 +35,13 @@ class MyApp extends StatelessWidget {
         coZalatwicPojazdy: (context) => const Pojazdy(),
         coZalatwicDokumenty: (context) => const Dokumenty(),
         coZalatwicNieruchomosci: (context) => const Nieruchomosci(),
+        dowodZguba: (context) => const DowodZguba(),
+        dowodWaznosc: (context) => const DowodWaznosc(),
+        dowodWyrob: (context) => const WyrobienieDowodu(),
+        homePage: (context) => const HomePage(),
+        nieruchomoscKupno: (context) => const PodatekNieruchomosc(),
+        nieruchomoscCzyPosiadasz: (context) => const NieruchomoscCzyPosiadasz(),
+        nieruchomoscInfo: (context) => const NieruchomoscInfo(),
       },
     );
   }

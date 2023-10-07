@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class PodatekNieruchomosc extends StatefulWidget {
   const PodatekNieruchomosc({super.key});
@@ -32,7 +33,7 @@ class _HomePageState extends State<PodatekNieruchomosc> {
               style: TextStyle(
                 fontSize: 35,
               ),
-              'Podatek od nieruchomości IN-1',
+              'Podatek od nieruchomości\nIN-1',
             ),
             const SizedBox(
               height: 80,
@@ -55,6 +56,7 @@ class _HomePageState extends State<PodatekNieruchomosc> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(nieruchomoscCzyPosiadasz);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(350, 50),
@@ -84,6 +86,8 @@ class _HomePageState extends State<PodatekNieruchomosc> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context)
+                        .pushNamedAndRemoveUntil(homePage, (route) => false);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(350, 50),
