@@ -13,3 +13,5 @@ const rejestracjaPojazdu = '/rejestracja_pojazdu/';
 const nabyciePojazdu = '/nabycie_pojazdu/';
 const dokumentyPojazd = '/dokumenty_pojazd/';
 const biletPrzed = '/bilet_przed/';
+const kontakt = '/kontakt/';
+const pomoc = '/pomoc/';

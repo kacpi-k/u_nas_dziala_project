@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/views/Pomoc/kontakt.dart';
+import 'package:u_nas_dziala_project/views/Pomoc/pomoc_g%C5%82%C3%B3wna.dart';
 import 'package:u_nas_dziala_project/views/bilet/bilet_aktywny.dart';
 //import 'package:u_nas_dziala_project/views/Pomoc/umow_wizyte.dart';
 import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Poppins',
       ),
-      home: const HomePage(),
+      home: QueuePage(),
       routes: {
         zalatwicSpraweRoute: (context) => const ZalatwiadnieSprawy(),
         coZalatwicPojazdy: (context) => const Pojazdy(),
@@ -52,6 +54,8 @@ class MyApp extends StatelessWidget {
         nabyciePojazdu: (context) => const NabyciePojazdu(),
         dokumentyPojazd: (context) => const CzyPosiadaszDokPojazd(),
         biletPrzed: (context) => const BiletPrzed(),
+        kontakt: (context) => const Kontakt(),
+        pomoc: (context) => const PomocGlowna(),
       },
     );
   }

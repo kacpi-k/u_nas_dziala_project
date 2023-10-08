@@ -63,15 +63,23 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Container(
-                width: 100,
-                height: 100,
-                margin: const EdgeInsets.only(left: 45),
-                decoration: BoxDecoration(
-                  color: greyCustomColor,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Center(
-                  child: Image.asset('icons/pomoc_button_icon.png'),
+                margin: const EdgeInsets.only(left: 45.0, right: 57.0),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(pomoc);
+                  },
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    //margin: const EdgeInsets.only(left: 45),
+                    decoration: BoxDecoration(
+                      color: greyCustomColor,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Center(
+                      child: Image.asset('icons/pomoc_button_icon.png'),
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -106,15 +114,23 @@ class _HomePageState extends State<HomePage> {
           Row(
             children: [
               Container(
-                width: 100,
-                height: 100,
-                margin: const EdgeInsets.only(left: 57, top: 100),
-                decoration: BoxDecoration(
-                  color: greyCustomColor,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Center(
-                  child: Image.asset('icons/kontakt_button_icon.png'),
+                margin: const EdgeInsets.only(left: 57.0, top: 100),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(kontakt);
+                  },
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    //margin: const EdgeInsets.only(left: 57, top: 100),
+                    decoration: BoxDecoration(
+                      color: greyCustomColor,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Center(
+                      child: Image.asset('icons/kontakt_button_icon.png'),
+                    ),
+                  ),
                 ),
               ),
               Container(
