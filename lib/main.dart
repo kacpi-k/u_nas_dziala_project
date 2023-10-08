@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_dokumenty.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_nieruchomosc.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_pojazdy.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Poppins',
       ),
-      home: const HomePage(),
+      home: const BiletPrzed(),
       routes: {
         zalatwicSpraweRoute: (context) => const ZalatwiadnieSprawy(),
         coZalatwicPojazdy: (context) => const Pojazdy(),

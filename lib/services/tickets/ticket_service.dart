@@ -1,11 +1,10 @@
 import 'dart:async';
 import 'dart:collection';
-import 'dart:math';
-import 'dart:developer' as dev;
+//import 'dart:developer' as dev;
 
 class TicketService {
   static final _ticketQueue = Queue<int>();
-  static int _ticketCounter = 0;
+  static int _ticketCounter = 23;
   static int _queueElementsCounter = 0;
   static int _loopCounterTest = 0;
 
@@ -17,6 +16,7 @@ class TicketService {
 
   static void removeFromTicketQueue() {
     _ticketQueue.removeFirst();
+    //_ticketCounter++;
   }
 
   static void setupQueue() {
@@ -27,20 +27,22 @@ class TicketService {
   }
 
   static void queueSimulator() {
-    Random rand = Random();
-    int randomNumber = rand.nextInt(2);
-    while (_loopCounterTest < 5) {
-      Timer.periodic(const Duration(seconds: 2), (Timer t) {
-        if (randomNumber != 1) {
-          addToTicketQueue();
-        } else {
+    try {
+      addToTicketQueue();
+      addToTicketQueue();
+      addToTicketQueue();
+      addToTicketQueue();
+      addToTicketQueue();
+      addToTicketQueue();
+      Timer.periodic(const Duration(seconds: 5), (Timer t) {
+        if (_loopCounterTest < 5) {
           removeFromTicketQueue();
+          _loopCounterTest += 1;
+        } else {
+          t.cancel(); // Zakończ timer po 5 iteracjach
         }
-        dev.log(
-            'Ile osob przed toba chuju: $_queueElementsCounter\nJaki numer biletu chuju: $_ticketCounter');
-        _loopCounterTest += 1;
       });
-    }
+    } catch (e) {}
   }
 
   static int getTicketCounter() {
