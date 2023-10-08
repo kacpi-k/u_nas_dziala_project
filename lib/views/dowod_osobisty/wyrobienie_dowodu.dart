@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/dokumentacja_dowod.dart';
 
 class WyrobienieDowodu extends StatefulWidget {
   const WyrobienieDowodu({super.key});
@@ -39,7 +40,7 @@ class _HomePageState extends State<WyrobienieDowodu> {
               height: 80,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 '1. Pobierz i wypełnij wniosek. Przygotuj potrzebne dokumenty. Szczegóły znajdziesz w sekcji Co musisz przygotować.2. Złóż dokumenty w urzędzie. Szczegóły znajdziesz w sekcji Gdzie składasz wniosek.3. Urzędnik pobierze twoje odciski palców. Na wniosku złóż własnoręczny podpis, który zostanie zamieszczony w dowodzie osobistym.4. Otrzymasz potwierdzenie złożenia wniosku.5. Odbierz gotowy dowód osobisty w urzędzie.',
                 style: TextStyle(
@@ -54,13 +55,18 @@ class _HomePageState extends State<WyrobienieDowodu> {
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const DowodDokumentacja()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(192, 43, 206, 46),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(192, 43, 206, 46),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -89,9 +95,10 @@ class _HomePageState extends State<WyrobienieDowodu> {
                         .pushNamedAndRemoveUntil(homePage, (route) => false);
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(173, 244, 18, 18),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(173, 244, 18, 18),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -109,7 +116,7 @@ class _HomePageState extends State<WyrobienieDowodu> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 ElevatedButton(
@@ -118,9 +125,10 @@ class _HomePageState extends State<WyrobienieDowodu> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(204, 50, 64, 255),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(204, 50, 64, 255),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -138,7 +146,7 @@ class _HomePageState extends State<WyrobienieDowodu> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
               ],

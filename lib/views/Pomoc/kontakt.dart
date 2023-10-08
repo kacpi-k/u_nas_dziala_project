@@ -38,7 +38,7 @@ class _HomePageState extends State<Kontakt> {
               height: 20,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 'Urząd miasta Płocka\nKrystyna Balcerzak\nNr telefonu: +48 890 666 712\nE-mail: kbalcerzak79@plock.pl',
                 style: TextStyle(
@@ -50,7 +50,7 @@ class _HomePageState extends State<Kontakt> {
               height: 10,
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
               child: const Text(
                 'Biuro interwencji i informowania mieszkańców\nKrystyna Balcerzak\nNr telefonu: 24 364 55 55\nE-mail: info@plock.pl',
                 style: TextStyle(
@@ -58,7 +58,7 @@ class _HomePageState extends State<Kontakt> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             Column(
@@ -69,9 +69,10 @@ class _HomePageState extends State<Kontakt> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(173, 244, 18, 18),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(173, 244, 18, 18),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów

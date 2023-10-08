@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/views/pojazd/brak_dowodu.dart';
+import 'package:u_nas_dziala_project/views/pojazd/brak_karty.dart';
 
 class BrakDokumPojazd extends StatefulWidget {
   const BrakDokumPojazd({super.key});
@@ -35,13 +37,17 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const BrakKartyPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -64,13 +70,17 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const BrakKartyPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -93,13 +103,17 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const BrakDowoduPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -126,9 +140,9 @@ class _HomePageState extends State<BrakDokumPojazd> {
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów

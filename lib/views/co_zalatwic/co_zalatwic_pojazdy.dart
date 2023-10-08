@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
+//import 'package:u_nas_dziala_project/views/pojazd/rejestracja_pojazd.dart';
+import 'package:u_nas_dziala_project/views/pojazd/zbycie_pojazdu.dart';
 
 class Pojazdy extends StatefulWidget {
   const Pojazdy({super.key});
@@ -35,13 +38,17 @@ class _HomePageState extends State<Pojazdy> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => (const ZbyciePojazdu())));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -68,9 +75,9 @@ class _HomePageState extends State<Pojazdy> {
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -93,13 +100,14 @@ class _HomePageState extends State<Pojazdy> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.of(context).pushNamed(dokumentyPojazd);
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -126,9 +134,9 @@ class _HomePageState extends State<Pojazdy> {
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów

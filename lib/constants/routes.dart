@@ -9,3 +9,7 @@ const homePage = '/homepage/';
 const nieruchomoscKupno = '/nieruchomosc_kupno/';
 const nieruchomoscCzyPosiadasz = '/nieruchomosc_czy_posiadasz/';
 const nieruchomoscInfo = '/nieruchomosc_info/';
+const rejestracjaPojazdu = '/rejestracja_pojazdu/';
+const nabyciePojazdu = '/nabycie_pojazdu/';
+const dokumentyPojazd = '/dokumenty_pojazd/';
+const biletPrzed = '/bilet_przed/';

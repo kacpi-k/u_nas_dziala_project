@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/colors.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
-import 'package:u_nas_dziala_project/services/tickets/ticket_service.dart';
+//import 'package:u_nas_dziala_project/services/tickets/ticket_service.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

@@ -34,11 +34,11 @@ class _HomePageState extends State<BrakKartyPojazd> {
               ),
               'Jeżeli nie jesteś w posiadaniu dowodu rejestracyjnego lub karty pojazdy dla pojazdu, który zakupiłeś, musisz skontaktować się z osobą, od której zakupiłeś pojazd. Sprzedający jest zobowiązany przekazać ci powyższe dokumenty podczas sprzedaży pojazdu.',
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 'Jeżeli nie jesteś w posiadaniu umowy sprzedaży pojazdu, bezzwłocznie skontatkuj się z osobą sprzedająca pojazd, gdyż nieposiadając dokumentu potwierdzającego zakup pojazdu, nie możesz stać się jego właścicielem!',
                 style: TextStyle(
@@ -46,11 +46,11 @@ class _HomePageState extends State<BrakKartyPojazd> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 'Formularz rejestracji pojazdu możesz pobrać w zakładce “Rejestracja pojazdu” pod przyciskiem “Dokumenty do pobrania”.',
                 style: TextStyle(
@@ -58,7 +58,7 @@ class _HomePageState extends State<BrakKartyPojazd> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Column(
@@ -66,9 +66,10 @@ class _HomePageState extends State<BrakKartyPojazd> {
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(192, 43, 206, 46),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(192, 43, 206, 46),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -95,9 +96,10 @@ class _HomePageState extends State<BrakKartyPojazd> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(204, 50, 64, 255),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(204, 50, 64, 255),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -115,7 +117,7 @@ class _HomePageState extends State<BrakKartyPojazd> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
               ],

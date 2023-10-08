@@ -39,9 +39,9 @@ class _HomePageState extends State<BrakujaceDokumenty> {
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -68,9 +68,9 @@ class _HomePageState extends State<BrakujaceDokumenty> {
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -97,9 +97,9 @@ class _HomePageState extends State<BrakujaceDokumenty> {
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -126,9 +126,9 @@ class _HomePageState extends State<BrakujaceDokumenty> {
               // Na przykład można dodać nawigację do innej strony.
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(350, 50),
-              backgroundColor: Color.fromARGB(255, 255, 255, 255),
-              padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+              minimumSize: const Size(350, 50),
+              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
               shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów

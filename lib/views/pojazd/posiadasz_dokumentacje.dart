@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
+import 'package:u_nas_dziala_project/views/pojazd/brak_dokument.dart';
 
 class CzyPosiadaszDokPojazd extends StatefulWidget {
   const CzyPosiadaszDokPojazd({super.key});
@@ -32,13 +34,13 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
               style: TextStyle(
                 fontSize: 25,
               ),
-              'Czy posiadasz kompletną dokumentację, niezbędną do załatwienia sprawy?',
+              'Czy posiadasz kompletną dokumentację, niezbędną do rejestracji pojazdu?',
             ),
             const SizedBox(
               height: 30,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 '1. Dowód własności pojazdu\n2. Dowód tosamości\n3. Karta pojazdu\n4. Dowód badania technicznego\n5. Polisa OC\n6. Formularz rejestracji',
                 textAlign: TextAlign.justify,
@@ -51,9 +53,9 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
               height: 5,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'Jezeli twoja dokumentacja jest kompletna naciśnij przycisk POTWIERDZAM. Jeśli jednak nie posiadasz wszystkich wymaganych dokumentów naciśnij przycisk UZUPEŁNIJ DOKUMENTACJĘ, aby uzyskać informacje, które pomogą ci w skompletowaniu brakujących dokumentów',
+                'Jezeli twoja dokumentacja jest kompletna naciśnij przycisk POTWIERDZAM. Jeśli jednak nie posiadasz wszystkich wymaganych dokumentów naciśnij przycisk UZUPEŁNIJ DOKUMENTACJĘ, aby uzyskać informacje, które pomogą ci w skompletowaniu brakujących\ndokumentów',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
                   fontSize: 16,
@@ -64,13 +66,18 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const BiletPrzed()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(192, 43, 206, 46),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(192, 43, 206, 46),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -93,13 +100,18 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const BrakDokumPojazd()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(173, 244, 18, 18),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(173, 244, 18, 18),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -117,7 +129,7 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
               ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/dowod_zguba.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/wyrobienie_dowodu.dart';
 
 class Dokumenty extends StatefulWidget {
   const Dokumenty({super.key});
@@ -37,14 +39,19 @@ class _Dokumenty extends State<Dokumenty> {
             ),
             ElevatedButton(
               onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DowodZguba()));
                 // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                 // Na przykład można dodać nawigację do innej strony.
                 Navigator.of(context).pushNamed(dowodZguba);
               },
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(350, 50),
-                backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                minimumSize: const Size(350, 50),
+                backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                padding:
+                    const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
                 shape: RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -71,9 +78,10 @@ class _Dokumenty extends State<Dokumenty> {
                 // Na przykład można dodać nawigację do innej strony.
               },
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(350, 50),
-                backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                minimumSize: const Size(350, 50),
+                backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                padding:
+                    const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
                 shape: RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -101,9 +109,10 @@ class _Dokumenty extends State<Dokumenty> {
                 Navigator.of(context).pushNamed(dowodWaznosc);
               },
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(350, 50),
-                backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                minimumSize: const Size(350, 50),
+                backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                padding:
+                    const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
                 shape: RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -130,9 +139,10 @@ class _Dokumenty extends State<Dokumenty> {
                 // Na przykład można dodać nawigację do innej strony.
               },
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(350, 50),
-                backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                minimumSize: const Size(350, 50),
+                backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                padding:
+                    const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
                 shape: RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -155,14 +165,19 @@ class _Dokumenty extends State<Dokumenty> {
             ),
             ElevatedButton(
               onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const WyrobienieDowodu()));
                 // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                 // Na przykład można dodać nawigację do innej strony.
                 Navigator.of(context).pushNamed(dowodWyrob);
               },
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(350, 50),
-                backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                minimumSize: const Size(350, 50),
+                backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                padding:
+                    const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
                 shape: RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -189,9 +204,10 @@ class _Dokumenty extends State<Dokumenty> {
                 // Na przykład można dodać nawigację do innej strony.
               },
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(350, 50),
-                backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                minimumSize: const Size(350, 50),
+                backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                padding:
+                    const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
                 shape: RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
@@ -218,9 +234,10 @@ class _Dokumenty extends State<Dokumenty> {
                 // Na przykład można dodać nawigację do innej strony.
               },
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(350, 50),
-                backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                minimumSize: const Size(350, 50),
+                backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                padding:
+                    const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
                 shape: RoundedRectangleBorder(
                   borderRadius:
                       BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów

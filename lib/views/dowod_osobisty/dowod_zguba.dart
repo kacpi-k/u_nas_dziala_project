@@ -39,7 +39,7 @@ class _HomePageState extends State<DowodZguba> {
               height: 30,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 '1.Przejdź na stronę EPUAP\n2. Wybierz, co chcesz zgłosić – utratę albo uszkodzenie dowodu.\n3. Wybierz urząd, który wydał dowód. Jeśli zgłaszasz uszkodzenie, a urząd nie otrzymał jeszcze dowodu – dostarcz go do tego urzędu.\n4. Kliknij przycisk Unieważnij dowód.\n5. System przekieruje cię do usługi e-podpis na stronie pz.gov.pl.\n6. Wykorzystaj profil zaufany i potwierdź unieważnienie kodem SMS, który dostaniesz na numer telefonu przypisany do twojego profilu zaufanego.\n7. Status twojego dowodu od razu się zmieni w Rejestrze Dowodów Osobistych.\n8. Na swoją skrzynkę ePUAP dostaniesz zaświadczenie o zgłoszeniu utraty lub uszkodzenia dowodu osobistego.\n9. Jeśli zgłaszasz uszkodzenie dowodu – zanieś dowód do urzędu albo wyślij pocztą.',
                 textAlign: TextAlign.justify,
@@ -59,9 +59,10 @@ class _HomePageState extends State<DowodZguba> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(192, 43, 206, 46),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(192, 43, 206, 46),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -90,9 +91,10 @@ class _HomePageState extends State<DowodZguba> {
                         .pushNamedAndRemoveUntil(homePage, (route) => false);
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(173, 244, 18, 18),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(173, 244, 18, 18),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -110,7 +112,7 @@ class _HomePageState extends State<DowodZguba> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 ElevatedButton(
@@ -119,9 +121,10 @@ class _HomePageState extends State<DowodZguba> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(204, 50, 64, 255),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(204, 50, 64, 255),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -139,7 +142,7 @@ class _HomePageState extends State<DowodZguba> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
               ],
