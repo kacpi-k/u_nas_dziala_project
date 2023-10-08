@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/uzupelnienie_dowod.dart';
 
 class DowodDokumentacja extends StatefulWidget {
   const DowodDokumentacja({super.key});
@@ -65,6 +67,10 @@ class _HomePageState extends State<DowodDokumentacja> {
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const BiletPrzed()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
@@ -94,6 +100,10 @@ class _HomePageState extends State<DowodDokumentacja> {
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const UzupelnienieDowod()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },

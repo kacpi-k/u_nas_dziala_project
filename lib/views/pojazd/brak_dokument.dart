@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/views/pojazd/brak_dowodu.dart';
+import 'package:u_nas_dziala_project/views/pojazd/brak_karty.dart';
 
 class BrakDokumPojazd extends StatefulWidget {
   const BrakDokumPojazd({super.key});
@@ -35,6 +37,10 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const BrakKartyPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
@@ -64,6 +70,10 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const BrakKartyPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
@@ -93,6 +103,10 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const BrakDowoduPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },

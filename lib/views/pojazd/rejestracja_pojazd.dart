@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/views/home_page.dart';
+import 'package:u_nas_dziala_project/views/pojazd/posiadasz_dokumentacje.dart';
 
 class RejestracjaPojazdu extends StatefulWidget {
   const RejestracjaPojazdu({super.key});
@@ -64,6 +66,11 @@ class _HomePageState extends State<RejestracjaPojazdu> {
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                const CzyPosiadaszDokPojazd()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
@@ -93,6 +100,10 @@ class _HomePageState extends State<RejestracjaPojazdu> {
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },

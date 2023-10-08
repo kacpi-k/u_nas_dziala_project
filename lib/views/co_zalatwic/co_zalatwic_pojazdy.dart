@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/views/pojazd/rejestracja_pojazd.dart';
+import 'package:u_nas_dziala_project/views/pojazd/zbycie_pojazdu.dart';
 
 class Pojazdy extends StatefulWidget {
   const Pojazdy({super.key});
@@ -35,6 +38,10 @@ class _HomePageState extends State<Pojazdy> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => (const ZbyciePojazdu())));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
@@ -93,6 +100,7 @@ class _HomePageState extends State<Pojazdy> {
           ),
           ElevatedButton(
             onPressed: () {
+              Navigator.of(context).pushNamed(dokumentyPojazd);
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/views/Pomoc/umow_wizyte.dart';
 import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_dokumenty.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_nieruchomosc.dart';
@@ -11,6 +12,9 @@ import 'package:u_nas_dziala_project/views/home_page.dart';
 import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/nieruchomosci_czy_posiadasz.dart';
 import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/nieruchomosci_info.dart';
 import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/podatek_nieruchomosc.dart';
+import 'package:u_nas_dziala_project/views/pojazd/nabycie_pojazdu.dart';
+import 'package:u_nas_dziala_project/views/pojazd/posiadasz_dokumentacje.dart';
+import 'package:u_nas_dziala_project/views/pojazd/rejestracja_pojazd.dart';
 import 'package:u_nas_dziala_project/views/zalatwic_sprawe.dart';
 
 void main() {
@@ -30,7 +34,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Poppins',
       ),
-      home: const BiletPrzed(),
+      home: const HomePage(),
       routes: {
         zalatwicSpraweRoute: (context) => const ZalatwiadnieSprawy(),
         coZalatwicPojazdy: (context) => const Pojazdy(),
@@ -43,6 +47,10 @@ class MyApp extends StatelessWidget {
         nieruchomoscKupno: (context) => const PodatekNieruchomosc(),
         nieruchomoscCzyPosiadasz: (context) => const NieruchomoscCzyPosiadasz(),
         nieruchomoscInfo: (context) => const NieruchomoscInfo(),
+        rejestracjaPojazdu: (context) => const RejestracjaPojazdu(),
+        nabyciePojazdu: (context) => const NabyciePojazdu(),
+        dokumentyPojazd: (context) => const CzyPosiadaszDokPojazd(),
+        biletPrzed: (context) => const BiletPrzed(),
       },
     );
   }
