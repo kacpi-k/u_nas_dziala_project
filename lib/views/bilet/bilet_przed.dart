@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/services/tickets/ticket_service.dart';
-import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
 
 class BiletPrzed extends StatefulWidget {
   const BiletPrzed({super.key});

@@ -1,31 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
-import 'package:u_nas_dziala_project/views/dowod_osobisty/dokumentacja_dowod.dart';
 
 class WyrobienieDowodu extends StatefulWidget {
   const WyrobienieDowodu({super.key});
 
   @override
-  State<WyrobienieDowodu> createState() => _HomePageState();
+  State<WyrobienieDowodu> createState() => _WyrobienieDowodu();
 }
 
-class _HomePageState extends State<WyrobienieDowodu> {
+class _WyrobienieDowodu extends State<WyrobienieDowodu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Dowód osobisty',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
             ),
@@ -56,10 +53,7 @@ class _HomePageState extends State<WyrobienieDowodu> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const DowodDokumentacja()));
+                    Navigator.of(context).pushNamed(dowodDokumentacja);
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
@@ -124,6 +118,7 @@ class _HomePageState extends State<WyrobienieDowodu> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(dowodDownload);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

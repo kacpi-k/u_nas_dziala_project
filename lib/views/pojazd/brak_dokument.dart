@@ -1,32 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
-import 'package:u_nas_dziala_project/views/pojazd/brak_karty.dart';
 
 class BrakDokumPojazd extends StatefulWidget {
   const BrakDokumPojazd({super.key});
 
   @override
-  State<BrakDokumPojazd> createState() => _HomePageState();
+  State<BrakDokumPojazd> createState() => _BrakDokumPojazd();
 }
 
-class _HomePageState extends State<BrakDokumPojazd> {
+class _BrakDokumPojazd extends State<BrakDokumPojazd> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Brakujące Dokumenty',
+          textAlign: TextAlign.center,
         ),
       ),
       body: Column(
         children: [
-          Align(
-            alignment: Alignment.center,
-            child: Image.asset('icons/herb_icon.png'),
-          ),
           const SizedBox(
-            height: 20,
+            height: 60,
           ),
           const Text(
             style: TextStyle(fontSize: 24),
@@ -37,10 +34,7 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BrakKartyPojazd()));
+              Navigator.of(context).pushNamed(brakKartyPojazdu);
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
@@ -70,10 +64,7 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BrakKartyPojazd()));
+              Navigator.of(context).pushNamed(brakKartyPojazdu);
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:u_nas_dziala_project/constants/routes.dart';
-import 'package:u_nas_dziala_project/services/notification_services.dart';
+import 'package:u_nas_dziala_project/services/notification_service.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 //test
@@ -40,26 +41,6 @@ class _QueuePageState extends State<QueuePage> {
             NotificationServices.showLocalNotification();
           }
         }
-      },
-    );
-  }
-
-  void _showQueuePopup() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Jesteś 3 w kolejce'),
-          content: const Text('Przygotuj się, jesteś 3 w kolejce.'),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('OK'),
-            ),
-          ],
-        );
       },
     );
   }

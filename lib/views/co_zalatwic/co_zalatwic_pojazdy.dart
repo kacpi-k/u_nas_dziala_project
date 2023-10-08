@@ -1,31 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
-//import 'package:u_nas_dziala_project/views/pojazd/rejestracja_pojazd.dart';
-import 'package:u_nas_dziala_project/views/pojazd/zbycie_pojazdu.dart';
 
 class Pojazdy extends StatefulWidget {
   const Pojazdy({super.key});
 
   @override
-  State<Pojazdy> createState() => _HomePageState();
+  State<Pojazdy> createState() => _Pojazdy();
 }
 
-class _HomePageState extends State<Pojazdy> {
+class _Pojazdy extends State<Pojazdy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Pojazdy',
+          textAlign: TextAlign.center,
         ),
       ),
       body: Column(
         children: [
-          Align(
-            alignment: Alignment.center,
-            child: Image.asset('icons/herb_icon.png'),
-          ),
           const SizedBox(
             height: 20,
           ),
@@ -38,10 +34,7 @@ class _HomePageState extends State<Pojazdy> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => (const ZbyciePojazdu())));
+              Navigator.of(context).pushNamed(zbyciePojazdu);
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },

@@ -5,26 +5,24 @@ class CzyPosiadaszDokPojazd extends StatefulWidget {
   const CzyPosiadaszDokPojazd({super.key});
 
   @override
-  State<CzyPosiadaszDokPojazd> createState() => _HomePageState();
+  State<CzyPosiadaszDokPojazd> createState() => _CzyPosiadaszDokPojazd();
 }
 
-class _HomePageState extends State<CzyPosiadaszDokPojazd> {
+class _CzyPosiadaszDokPojazd extends State<CzyPosiadaszDokPojazd> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Dokumenty',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
             ),
@@ -42,7 +40,7 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
               padding: const EdgeInsets.all(16.0),
               child: const Text(
                 '1. Dowód własności pojazdu\n2. Dowód tosamości\n3. Karta pojazdu\n4. Dowód badania technicznego\n5. Polisa OC\n6. Formularz rejestracji',
-                textAlign: TextAlign.justify,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
                 ),
@@ -54,8 +52,8 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'Jezeli twoja dokumentacja jest kompletna naciśnij przycisk POTWIERDZAM. Jeśli jednak nie posiadasz wszystkich wymaganych dokumentów naciśnij przycisk UZUPEŁNIJ DOKUMENTACJĘ, aby uzyskać informacje, które pomogą ci w skompletowaniu brakujących\ndokumentów',
-                textAlign: TextAlign.justify,
+                'Jezeli twoja dokumentacja jest kompletna naciśnij przycisk POTWIERDZAM. Jeśli jednak nie posiadasz wszystkich wymaganych dokumentów, naciśnij przycisk UZUPEŁNIJ DOKUMENTACJĘ, aby uzyskać informacje, które pomogą ci w skompletowaniu brakujących\ndokumentów',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
                 ),

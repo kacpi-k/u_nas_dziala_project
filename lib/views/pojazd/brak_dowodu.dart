@@ -5,10 +5,10 @@ class BrakDowoduPojazd extends StatefulWidget {
   const BrakDowoduPojazd({super.key});
 
   @override
-  State<BrakDowoduPojazd> createState() => _HomePageState();
+  State<BrakDowoduPojazd> createState() => _BrakDowoduPojazd();
 }
 
-class _HomePageState extends State<BrakDowoduPojazd> {
+class _BrakDowoduPojazd extends State<BrakDowoduPojazd> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

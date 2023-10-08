@@ -14,16 +14,14 @@ class _Nieruchomosci extends State<Nieruchomosci> {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Nieruchomości',
+          textAlign: TextAlign.center,
         ),
       ),
       body: Column(
         children: [
-          Align(
-            alignment: Alignment.center,
-            child: Image.asset('icons/herb_icon.png'),
-          ),
           const SizedBox(
             height: 20,
           ),
@@ -32,7 +30,7 @@ class _Nieruchomosci extends State<Nieruchomosci> {
             'Co potrzebujesz załatwić?',
           ),
           const SizedBox(
-            height: 80,
+            height: 70,
           ),
           ElevatedButton(
             onPressed: () {

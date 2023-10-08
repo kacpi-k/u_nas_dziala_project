@@ -1,52 +1,38 @@
 import 'package:flutter/material.dart';
-import 'package:u_nas_dziala_project/views/pojazd/brak_karty.dart';
 
 class NieruchomosciDownload extends StatefulWidget {
   const NieruchomosciDownload({super.key});
 
   @override
-  State<NieruchomosciDownload> createState() => _HomePageState();
+  State<NieruchomosciDownload> createState() => _NieruchomosciDownload();
 }
 
-class _HomePageState extends State<NieruchomosciDownload> {
+class _NieruchomosciDownload extends State<NieruchomosciDownload> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Dokumenty do pobrania',
+          textAlign: TextAlign.center,
         ),
       ),
       body: Column(
         children: [
-          Align(
-            alignment: Alignment.center,
-            child: Image.asset('icons/herb_icon.png'),
-          ),
           const SizedBox(
-            height: 20,
-          ),
-          const Text(
-            style: TextStyle(fontSize: 24),
-            'Dokumenty do pobrania',
-          ),
-          const SizedBox(
-            height: 80,
+            height: 100,
           ),
           const Text(
             style: TextStyle(fontSize: 24),
             'Nieruchomości',
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BrakKartyPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
@@ -76,10 +62,6 @@ class _HomePageState extends State<NieruchomosciDownload> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BrakKartyPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
@@ -109,10 +91,6 @@ class _HomePageState extends State<NieruchomosciDownload> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BrakKartyPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
@@ -137,15 +115,11 @@ class _HomePageState extends State<NieruchomosciDownload> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BrakKartyPojazd()));
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },

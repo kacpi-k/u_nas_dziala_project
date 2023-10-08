@@ -1,41 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
-import 'package:u_nas_dziala_project/views/home_page.dart';
-import 'package:u_nas_dziala_project/views/pojazd/posiadasz_dokumentacje.dart';
 
 class RejestracjaPojazdu extends StatefulWidget {
   const RejestracjaPojazdu({super.key});
 
   @override
-  State<RejestracjaPojazdu> createState() => _HomePageState();
+  State<RejestracjaPojazdu> createState() => _RejestracjaPojazdu();
 }
 
-class _HomePageState extends State<RejestracjaPojazdu> {
+class _RejestracjaPojazdu extends State<RejestracjaPojazdu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Rejestracja pojazdu',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
-            ),
-            const Text(
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 35,
-              ),
-              'Rejestracja pojazdu',
             ),
             const SizedBox(
               height: 30,
@@ -135,6 +124,7 @@ class _HomePageState extends State<RejestracjaPojazdu> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(pojazdDownload);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

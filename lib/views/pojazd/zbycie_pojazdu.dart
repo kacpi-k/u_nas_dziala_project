@@ -5,35 +5,26 @@ class ZbyciePojazdu extends StatefulWidget {
   const ZbyciePojazdu({super.key});
 
   @override
-  State<ZbyciePojazdu> createState() => _HomePageState();
+  State<ZbyciePojazdu> createState() => _ZbyciePojazdu();
 }
 
-class _HomePageState extends State<ZbyciePojazdu> {
+class _ZbyciePojazdu extends State<ZbyciePojazdu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Zbycie pojazdu',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
-            ),
-            const Text(
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 40,
-              ),
-              'Zbycie pojazdu',
             ),
             const SizedBox(
               height: 30,
@@ -54,7 +45,7 @@ class _HomePageState extends State<ZbyciePojazdu> {
             Column(
               children: [
                 const SizedBox(
-                  height: 70,
+                  height: 180,
                 ),
                 ElevatedButton(
                   onPressed: () {

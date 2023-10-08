@@ -4,10 +4,10 @@ class BrakujaceDokumenty extends StatefulWidget {
   const BrakujaceDokumenty({super.key});
 
   @override
-  State<BrakujaceDokumenty> createState() => _HomePageState();
+  State<BrakujaceDokumenty> createState() => _BrakujaceDokumenty();
 }
 
-class _HomePageState extends State<BrakujaceDokumenty> {
+class _BrakujaceDokumenty extends State<BrakujaceDokumenty> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
