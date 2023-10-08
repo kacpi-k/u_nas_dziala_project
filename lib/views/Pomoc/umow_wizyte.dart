@@ -41,7 +41,7 @@ class _HomePageState extends State<UmowWizyte> {
               textAlign: TextAlign.center,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 '1. Wyslij email na adres urzadmiasta@plock.eu\n 2. W wiadomosci dokladnie opisz problem ktory cie dotyczy oraz jakiego rozwiazania oczekujesz\n3. Oczekuj na wiadomosc zwrotna\n4. W przypadku jakichkolwiek watpliwosci mozesz skontaktowac sie z naszym biurem obslugi klienta. Numery telefonow znajdziesz w zakladce Kontakt',
                 style: TextStyle(
@@ -50,7 +50,7 @@ class _HomePageState extends State<UmowWizyte> {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
             ),
             Column(children: [
               ElevatedButton(
@@ -59,9 +59,10 @@ class _HomePageState extends State<UmowWizyte> {
                       MaterialPageRoute(builder: (context) => const Kontakt()));
                 },
                 style: ElevatedButton.styleFrom(
-                  minimumSize: Size(350, 50),
-                  backgroundColor: Color.fromARGB(192, 43, 206, 46),
-                  padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                  minimumSize: const Size(350, 50),
+                  backgroundColor: const Color.fromARGB(192, 43, 206, 46),
+                  padding:
+                      const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(
                         8.0), // Dostosuj zaokrąglenie rogów
@@ -93,9 +94,10 @@ class _HomePageState extends State<UmowWizyte> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(173, 244, 18, 18),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(173, 244, 18, 18),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów

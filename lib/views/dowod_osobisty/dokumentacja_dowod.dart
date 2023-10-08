@@ -40,7 +40,7 @@ class _HomePageState extends State<DowodDokumentacja> {
               height: 15,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 '1. Wniosek o wydanie dowodu tożsamości.\n2. Fotografia o wymiarach 35 x 45mm.\n3. Dotychczasowy dowód lub paszport (jeżeli posiadasz).',
                 style: TextStyle(
@@ -52,7 +52,7 @@ class _HomePageState extends State<DowodDokumentacja> {
               height: 10,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 'Jeżeli twoja dokumentacja jest kompletna naciśnij przycisk “POTWIERDZAM’. Jeśli jednak nie posiadasz wszystkich wymaganych dokumentów, naciśnij przycisk “NIE”, aby uzyskać informację, które pomogą ci w skompletowaniu brakujących dokumentów',
                 style: TextStyle(
@@ -60,7 +60,7 @@ class _HomePageState extends State<DowodDokumentacja> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Column(
@@ -75,9 +75,10 @@ class _HomePageState extends State<DowodDokumentacja> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(192, 43, 206, 46),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(192, 43, 206, 46),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -108,9 +109,10 @@ class _HomePageState extends State<DowodDokumentacja> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(173, 244, 18, 18),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(173, 244, 18, 18),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -128,7 +130,7 @@ class _HomePageState extends State<DowodDokumentacja> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 ElevatedButton(
@@ -137,9 +139,10 @@ class _HomePageState extends State<DowodDokumentacja> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(204, 50, 64, 255),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(204, 50, 64, 255),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -157,7 +160,7 @@ class _HomePageState extends State<DowodDokumentacja> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
               ],

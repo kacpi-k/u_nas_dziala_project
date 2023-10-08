@@ -40,7 +40,7 @@ class _HomePageState extends State<RejestracjaPojazdu> {
               height: 30,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 'Aby zarejestrować pojazd naley:\n1. Upewnić się, ze pojazd posiada polisę OC\n2. Zebrać wszystkie potrzebne dokumenty\n3. Upewnić się ze wszystkie wymagane koszta zostały pokryte.\n4. Złozyc wniosek w urzędzie',
                 textAlign: TextAlign.justify,
@@ -53,7 +53,7 @@ class _HomePageState extends State<RejestracjaPojazdu> {
               height: 5,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 'Koszt rejestracji pojazdu wynosi od 80 do 160zł. Dodatkowo za wydanie dowodu rejestracyjnego wymagana jest opłata wysokości 80zł.',
                 textAlign: TextAlign.justify,
@@ -75,9 +75,10 @@ class _HomePageState extends State<RejestracjaPojazdu> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(192, 43, 206, 46),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(192, 43, 206, 46),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -108,9 +109,10 @@ class _HomePageState extends State<RejestracjaPojazdu> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(173, 244, 18, 18),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(173, 244, 18, 18),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -128,7 +130,7 @@ class _HomePageState extends State<RejestracjaPojazdu> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 ElevatedButton(
@@ -137,9 +139,10 @@ class _HomePageState extends State<RejestracjaPojazdu> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(204, 50, 64, 255),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(204, 50, 64, 255),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -157,7 +160,7 @@ class _HomePageState extends State<RejestracjaPojazdu> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
               ],

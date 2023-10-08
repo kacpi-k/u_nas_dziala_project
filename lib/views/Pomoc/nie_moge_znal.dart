@@ -38,7 +38,7 @@ class _HomePageState extends State<PomocNieMogeZnal> {
               height: 30,
             ),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Text(
                 'Jeżeli po wejściu zakładkę “Chcę załatwić sprawę” i wybraniu jednej z podanych tam kategorii, nie możesz znaleźć sprawy, którą potrzebujesz załatwić, upewnij się że nie przeoczyłeś opcji w menu wyboru. Jeżeli jesteś pewien że interesująca cię sprawa nie została uwzględniona w naszej aplikacji, możesz skontaktować się z naszym pracownikiem który pomoże ci w rozwiązaniu twojego problemu. Aby skontaktować się z naszym pracownikiem, naciśnij przycisk “Potrzebuję pomocy” i wybierz interesującą cię formę kontaktu',
                 textAlign: TextAlign.justify,
@@ -58,9 +58,10 @@ class _HomePageState extends State<PomocNieMogeZnal> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(204, 50, 64, 255),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(204, 50, 64, 255),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -87,9 +88,10 @@ class _HomePageState extends State<PomocNieMogeZnal> {
                     // Na przykład można dodać nawigację do innej strony.
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    backgroundColor: Color.fromARGB(173, 244, 18, 18),
-                    padding: EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
+                    minimumSize: const Size(350, 50),
+                    backgroundColor: const Color.fromARGB(173, 244, 18, 18),
+                    padding: const EdgeInsets.all(
+                        16.0), // Dostosuj wcięcie przycisku
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Dostosuj zaokrąglenie rogów
@@ -107,10 +109,10 @@ class _HomePageState extends State<PomocNieMogeZnal> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
               ],
