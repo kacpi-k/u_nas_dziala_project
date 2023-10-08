@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Poppins',
       ),
-      home: QueuePage(),
+      home: HomePage(),
       routes: {
         zalatwicSpraweRoute: (context) => const ZalatwiadnieSprawy(),
         coZalatwicPojazdy: (context) => const Pojazdy(),
