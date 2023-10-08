@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/services/tickets/ticket_service.dart';
 import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
 
@@ -42,6 +42,8 @@ class _BiletPrzed extends State<BiletPrzed> {
               onTap: () {
                 // Obsługa kliknięcia przycisku
                 //Navigator.of(context).pushNamed(zalatwicSpraweRoute);
+                Navigator.of(context)
+                    .pushNamedAndRemoveUntil(biletAktywny, (route) => false);
               },
               child: Container(
                 width: 200.0,
@@ -67,7 +69,7 @@ class _BiletPrzed extends State<BiletPrzed> {
                 style: TextStyle(
                   fontSize: 18,
                 ),
-                'Liczba osób w kolejce: ',
+                'Liczba osób w kolejce: 10',
               ),
             ),
           ),

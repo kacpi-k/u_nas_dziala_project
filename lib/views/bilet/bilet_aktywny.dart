@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:u_nas_dziala_project/constants/routes.dart';
+import 'package:u_nas_dziala_project/services/notification_services.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 //test
 
@@ -23,19 +25,23 @@ class _QueuePageState extends State<QueuePage> {
   }
 
   void startTimer() {
-    timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (currentQueuePosition > 0) {
-        setState(
-          () {
-            currentQueuePosition--; // Dekrementuj pozycję w kolejce co 20 sekund
-          },
-        );
-        if (currentQueuePosition == 3) {
+    configureLocalNotifications();
+    timer = Timer.periodic(
+      const Duration(seconds: 1),
+      (timer) {
+        if (currentQueuePosition > 0) {
+          setState(
+            () {
+              currentQueuePosition--; // Dekrementuj pozycję w kolejce co 20 sekund
+            },
+          );
+          if (currentQueuePosition == 3) {
 // Wyświetl popup po osiągnięciu pozycji 3 w kolejce
-          _showQueuePopup();
+            NotificationServices.showLocalNotification();
+          }
         }
-      }
-    });
+      },
+    );
   }
 
   void _showQueuePopup() {
@@ -55,6 +61,38 @@ class _QueuePageState extends State<QueuePage> {
           ],
         );
       },
+    );
+  }
+
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
+
+  void configureLocalNotifications() async {
+    const InitializationSettings initializationSettings =
+        InitializationSettings(
+      android: AndroidInitializationSettings('@mipmap/ic_launcher'),
+    );
+
+    await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+  }
+
+  void showLocalNotification() async {
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
+      'your_channel_id',
+      'your_channel_name',
+      importance: Importance.max,
+      priority: Priority.high,
+    );
+    const NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
+
+    await flutterLocalNotificationsPlugin.show(
+      0,
+      'Urząd Miasta Płock',
+      'Przygotuj się! Przed Tobą zostały już tylko 3 osoby!',
+      platformChannelSpecifics,
+      payload: 'custom_notification',
     );
   }
 

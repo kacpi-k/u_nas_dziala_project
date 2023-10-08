@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Poppins',
       ),
-      home: HomePage(),
+      home: const HomePage(),
       routes: {
         zalatwicSpraweRoute: (context) => const ZalatwiadnieSprawy(),
         coZalatwicPojazdy: (context) => const Pojazdy(),
@@ -54,6 +54,7 @@ class MyApp extends StatelessWidget {
         nabyciePojazdu: (context) => const NabyciePojazdu(),
         dokumentyPojazd: (context) => const CzyPosiadaszDokPojazd(),
         biletPrzed: (context) => const BiletPrzed(),
+        biletAktywny: (context) => QueuePage(),
         kontakt: (context) => const Kontakt(),
         pomoc: (context) => const PomocGlowna(),
       },
