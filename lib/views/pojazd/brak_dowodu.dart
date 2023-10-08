@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class BrakDowoduPojazd extends StatefulWidget {
   const BrakDowoduPojazd({super.key});
@@ -32,7 +33,7 @@ class _HomePageState extends State<BrakDowoduPojazd> {
               style: TextStyle(
                 fontSize: 21,
               ),
-              'Jezeli nie jesteś w posiadaniu dowodu tozsamości, mozesz złozyc wniosek o jego wydanie w Wydziale Ewidencji i Spraw Obywatelskich.Więcej informacji uzyskasz w zakładce "wyrobienie dowodu osobistego"',
+              'Jezeli nie jesteś w posiadaniu dowodu tożsamości, możesz złożyc wniosek o jego wydanie w Wydziale Ewidencji i Spraw Obywatelskich.\nWięcej informacji znajdziesz w zakładce "Wyrobienie dowodu osobistego"',
             ),
             const SizedBox(
               height: 300,
@@ -43,6 +44,7 @@ class _HomePageState extends State<BrakDowoduPojazd> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(wyrobienieDowodu);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

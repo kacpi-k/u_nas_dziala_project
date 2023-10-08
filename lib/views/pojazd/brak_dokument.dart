@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:u_nas_dziala_project/views/pojazd/brak_dowodu.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/views/pojazd/brak_karty.dart';
 
 class BrakDokumPojazd extends StatefulWidget {
@@ -103,10 +103,7 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BrakDowoduPojazd()));
+              Navigator.of(context).pushNamed(brakDowoduPojazd);
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },
@@ -133,32 +130,6 @@ class _HomePageState extends State<BrakDokumPojazd> {
           ),
           const SizedBox(
             height: 40,
-          ),
-          ElevatedButton(
-            onPressed: () {
-              // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
-              // Na przykład można dodać nawigację do innej strony.
-            },
-            style: ElevatedButton.styleFrom(
-              minimumSize: const Size(350, 50),
-              backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-              padding: const EdgeInsets.all(16.0), // Dostosuj wcięcie przycisku
-              shape: RoundedRectangleBorder(
-                borderRadius:
-                    BorderRadius.circular(8.0), // Dostosuj zaokrąglenie rogów
-                side: const BorderSide(
-                    color: Color.fromARGB(
-                        255, 193, 193, 193)), // Dostosuj kolor obramowania
-              ),
-            ),
-            child: const Text(
-              'Odziedziczyłem pojazd',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 18.0, // Dostosuj rozmiar tekstu
-                fontWeight: FontWeight.bold, // Dostosuj wagę tekstu
-              ),
-            ),
           ),
         ],
       ),

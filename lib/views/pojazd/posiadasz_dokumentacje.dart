@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
-import 'package:u_nas_dziala_project/views/pojazd/brak_dokument.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class CzyPosiadaszDokPojazd extends StatefulWidget {
   const CzyPosiadaszDokPojazd({super.key});
@@ -66,10 +65,7 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const BiletPrzed()));
+                    Navigator.of(context).pushNamed(biletPrzed);
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
@@ -100,10 +96,7 @@ class _HomePageState extends State<CzyPosiadaszDokPojazd> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const BrakDokumPojazd()));
+                    Navigator.of(context).pushNamed(brakDokumentuPojazd);
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },

@@ -8,6 +8,7 @@ import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_dokumenty.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_nieruchomosc.dart';
 import 'package:u_nas_dziala_project/views/co_zalatwic/co_zalatwic_pojazdy.dart';
+import 'package:u_nas_dziala_project/views/do_pobrania/dowod_download.dart';
 import 'package:u_nas_dziala_project/views/dowod_osobisty/dowod_waznosc.dart';
 import 'package:u_nas_dziala_project/views/dowod_osobisty/dowod_zguba.dart';
 import 'package:u_nas_dziala_project/views/dowod_osobisty/wyrobienie_dowodu.dart';
@@ -15,6 +16,9 @@ import 'package:u_nas_dziala_project/views/home_page.dart';
 import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/nieruchomosci_czy_posiadasz.dart';
 import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/nieruchomosci_info.dart';
 import 'package:u_nas_dziala_project/views/nieruchomo%C5%9Bci/podatek_nieruchomosc.dart';
+import 'package:u_nas_dziala_project/views/pojazd/brak_dokument.dart';
+import 'package:u_nas_dziala_project/views/pojazd/brak_dowodu.dart';
+import 'package:u_nas_dziala_project/views/pojazd/brak_karty.dart';
 import 'package:u_nas_dziala_project/views/pojazd/nabycie_pojazdu.dart';
 import 'package:u_nas_dziala_project/views/pojazd/posiadasz_dokumentacje.dart';
 import 'package:u_nas_dziala_project/views/pojazd/rejestracja_pojazd.dart';
@@ -57,6 +61,12 @@ class MyApp extends StatelessWidget {
         biletAktywny: (context) => QueuePage(),
         kontakt: (context) => const Kontakt(),
         pomoc: (context) => const PomocGlowna(),
+        rejestracjaPojazd: (context) => const RejestracjaPojazdu(),
+        brakDokumentuPojazd: (context) => const BrakDokumPojazd(),
+        brakDowoduPojazd: (context) => const BrakDowoduPojazd(),
+        brakKartyPojazdu: (context) => const BrakKartyPojazd(),
+        wyrobienieDowodu: (context) => const WyrobienieDowodu(),
+        dowodDownload: (context) => const DowodDownload(),
       },
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:u_nas_dziala_project/views/pojazd/brak_dowodu.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/views/pojazd/brak_karty.dart';
 
 class NabyciePojazduDownload extends StatefulWidget {
@@ -39,15 +39,12 @@ class _HomePageState extends State<NabyciePojazduDownload> {
             style: TextStyle(fontSize: 24),
             'Nabycie/Rejestracja pojazdu',
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BrakKartyPojazd()));
+              Navigator.of(context).pushNamed(brakKartyPojazdu);
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },

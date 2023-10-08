@@ -41,8 +41,8 @@ class _HomePageState extends State<ZbyciePojazdu> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'Aby zgłosić zbycie pojazdu nalezy\n1. Przygotować odpowiednie dokumenty\n2. Zgłosić nabycie pojazdu w urzędzie\n3. Nabycie pojazdu mozna zgłosić poprzez platformę EUAP',
-                textAlign: TextAlign.justify,
+                'Aby zgłosić zbycie pojazdu należy:\n1. Przygotować odpowiednie dokumenty\n2. Zgłosić nabycie pojazdu w urzędzie\n3. Nabycie pojazdu mozna zgłosić poprzez platformę EUAP',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
                 ),

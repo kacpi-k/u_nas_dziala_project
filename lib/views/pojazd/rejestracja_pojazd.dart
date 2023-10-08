@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/views/home_page.dart';
 import 'package:u_nas_dziala_project/views/pojazd/posiadasz_dokumentacje.dart';
 
@@ -42,8 +43,8 @@ class _HomePageState extends State<RejestracjaPojazdu> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'Aby zarejestrować pojazd naley:\n1. Upewnić się, ze pojazd posiada polisę OC\n2. Zebrać wszystkie potrzebne dokumenty\n3. Upewnić się ze wszystkie wymagane koszta zostały pokryte.\n4. Złozyc wniosek w urzędzie',
-                textAlign: TextAlign.justify,
+                'Aby zarejestrować pojazd należy:\n1. Upewnić się, że pojazd posiada\npolisę OC.\n2. Zebrać wszystkie potrzebne dokumenty.\n3. Upewnić się, że wszystkie wymagane koszta zostały pokryte.\n4. Złożyc wniosek w urzędzie.',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
                 ),
@@ -56,21 +57,20 @@ class _HomePageState extends State<RejestracjaPojazdu> {
               padding: const EdgeInsets.all(16.0),
               child: const Text(
                 'Koszt rejestracji pojazdu wynosi od 80 do 160zł. Dodatkowo za wydanie dowodu rejestracyjnego wymagana jest opłata wysokości 80zł.',
-                textAlign: TextAlign.justify,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
                 ),
               ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
             Column(
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>
-                                const CzyPosiadaszDokPojazd()));
+                    Navigator.of(context).pushNamed(dokumentyPojazd);
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
@@ -101,10 +101,8 @@ class _HomePageState extends State<RejestracjaPojazdu> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const HomePage()));
+                    Navigator.of(context)
+                        .pushNamedAndRemoveUntil(homePage, (route) => false);
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class Kontakt extends StatefulWidget {
   const Kontakt({super.key});
@@ -44,6 +45,7 @@ class _HomePageState extends State<Kontakt> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -56,6 +58,7 @@ class _HomePageState extends State<Kontakt> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -67,6 +70,8 @@ class _HomePageState extends State<Kontakt> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context)
+                        .pushNamedAndRemoveUntil(homePage, (route) => false);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

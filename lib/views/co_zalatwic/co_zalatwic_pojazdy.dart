@@ -100,7 +100,7 @@ class _HomePageState extends State<Pojazdy> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(dokumentyPojazd);
+              Navigator.of(context).pushNamed(rejestracjaPojazd);
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
             },

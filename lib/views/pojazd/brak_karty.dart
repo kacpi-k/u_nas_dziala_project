@@ -44,6 +44,7 @@ class _HomePageState extends State<BrakKartyPojazd> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -56,6 +57,7 @@ class _HomePageState extends State<BrakKartyPojazd> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
