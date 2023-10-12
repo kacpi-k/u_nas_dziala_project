@@ -84,10 +84,11 @@ class _HomePage extends State<HomePage> {
             ],
           ),
           Row(
-            //mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: const EdgeInsets.only(top: 10, left: 57),
+                //margin: const EdgeInsets.only(top: 10, left: 57),
+                margin: const EdgeInsets.only(top: 10),
                 child: const Text(
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -100,7 +101,8 @@ class _HomePage extends State<HomePage> {
                 width: 50,
               ),
               Container(
-                margin: const EdgeInsets.only(top: 0, left: 15),
+                //margin: const EdgeInsets.only(top: 0, left: 15),
+                margin: const EdgeInsets.only(top: 0),
                 child: const Text(
                   textAlign: TextAlign.center,
                   style: TextStyle(
