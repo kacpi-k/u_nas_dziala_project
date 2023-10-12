@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/services/url/url_service.dart';
 import 'package:u_nas_dziala_project/views/home_page.dart';
 
@@ -88,8 +87,6 @@ class _ZbyciePojazdu extends State<ZbyciePojazdu> {
                             builder: (context) => const HomePage()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
-                    Navigator.of(context)
-                        .pushNamedAndRemoveUntil(homePage, (route) => false);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

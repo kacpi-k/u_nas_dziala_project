@@ -28,7 +28,7 @@ class _QueuePageState extends State<QueuePage> {
   void startTimer() {
     configureLocalNotifications();
     timer = Timer.periodic(
-      const Duration(seconds: 2),
+      const Duration(seconds: 1),
       (timer) {
         if (currentQueuePosition > 0) {
           setState(
