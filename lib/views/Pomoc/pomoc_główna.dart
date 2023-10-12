@@ -1,31 +1,31 @@
-// ignore: file_names
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class PomocGlowna extends StatefulWidget {
   const PomocGlowna({super.key});
 
   @override
-  State<PomocGlowna> createState() => _HomePageState();
+  State<PomocGlowna> createState() => _PomocGlowna();
 }
 
-class _HomePageState extends State<PomocGlowna> {
+class _PomocGlowna extends State<PomocGlowna> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Pomoc',
+          textAlign: TextAlign.center,
         ),
       ),
       body: Column(
         children: [
-          Align(
-            alignment: Alignment.center,
-            child: Image.asset('icons/herb_icon.png'),
-          ),
           const SizedBox(
-            height: 20,
+            height: 40,
           ),
           const Text(
             style: TextStyle(fontSize: 24),
@@ -67,6 +67,7 @@ class _HomePageState extends State<PomocGlowna> {
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
+              Navigator.of(context).pushNamed(nieMogeZnalezcSprawy);
             },
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(350, 50),

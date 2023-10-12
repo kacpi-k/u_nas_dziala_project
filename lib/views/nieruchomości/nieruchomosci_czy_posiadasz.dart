@@ -5,26 +5,24 @@ class NieruchomoscCzyPosiadasz extends StatefulWidget {
   const NieruchomoscCzyPosiadasz({super.key});
 
   @override
-  State<NieruchomoscCzyPosiadasz> createState() => _HomePageState();
+  State<NieruchomoscCzyPosiadasz> createState() => _NieruchomoscCzyPosiadasz();
 }
 
-class _HomePageState extends State<NieruchomoscCzyPosiadasz> {
+class _NieruchomoscCzyPosiadasz extends State<NieruchomoscCzyPosiadasz> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Nieruchomość',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
             ),
@@ -41,10 +39,11 @@ class _HomePageState extends State<NieruchomoscCzyPosiadasz> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                '1.Druk IN-1 Informacja o nieruchomościach i obiektach budowlanych.\n2.ZIN-1, w którym podasz dane o przedmiotach opodatkowania, które podlegają opodatkowaniu.\n3.ZIN-2, w którym podasz dane o przedmiotach opodatkowania zwolnionych z opodatkowania.\n4.ZIN-3, w którym podasz dane pozostałych współwłaścicieli, jeśli składacie jeden wspólny formularz IN-1, np. gdy składasz ten formularz wspólnie z małżonkiem.',
+                '1. Druk IN-1 Informacja o nieruchomościach i obiektach budowlanych.\n2. ZIN-1, w którym podasz dane o przedmiotach opodatkowania, które podlegają opodatkowaniu.\n3. ZIN-2, w którym podasz dane o przedmiotach opodatkowania zwolnionych z opodatkowania.\n4. ZIN-3, w którym podasz dane pozostałych współwłaścicieli, jeśli składacie jeden wspólny formularz IN-1, np. gdy składasz ten formularz wspólnie z małżonkiem.',
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -53,10 +52,11 @@ class _HomePageState extends State<NieruchomoscCzyPosiadasz> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'Jeżeli twoja dokumentacja jest kompletna naciśnij przycisk “POTWIERDZAM’. Jeśli jednak nie posiadasz wszystkich wymaganych dokumentów, naciśnij przycisk “NIE”, aby uzyskać informację, które pomogą ci w skompletowaniu brakujących dokumentów',
+                'Jeżeli twoja dokumentacja jest kompletna naciśnij przycisk “POTWIERDZAM". Jeśli jednak nie posiadasz wszystkich wymaganych dokumentów, naciśnij przycisk “NIE”, aby uzyskać informację, które pomogą ci w skompletowaniu brakujących dokumentów',
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -68,6 +68,7 @@ class _HomePageState extends State<NieruchomoscCzyPosiadasz> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(biletPrzed);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),
@@ -129,6 +130,7 @@ class _HomePageState extends State<NieruchomoscCzyPosiadasz> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(pomoc);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

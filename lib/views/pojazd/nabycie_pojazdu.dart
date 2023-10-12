@@ -5,17 +5,19 @@ class NabyciePojazdu extends StatefulWidget {
   const NabyciePojazdu({super.key});
 
   @override
-  State<NabyciePojazdu> createState() => _HomePageState();
+  State<NabyciePojazdu> createState() => _NabyciePojazdu();
 }
 
-class _HomePageState extends State<NabyciePojazdu> {
+class _NabyciePojazdu extends State<NabyciePojazdu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Rejestracja pojazdu',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(

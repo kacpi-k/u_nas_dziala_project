@@ -7,10 +7,10 @@ class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<HomePage> createState() => _HomePage();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePage extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     //TicketService.queueSimulator();
@@ -40,10 +40,10 @@ class _HomePageState extends State<HomePage> {
             height: 100,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: const EdgeInsets.only(
-                    left: 57.0), // Margines od lewej strony
+                margin: const EdgeInsets.only(left: 57.0),
                 child: InkWell(
                   onTap: () {
                     // Obsługa kliknięcia przycisku
@@ -71,7 +71,6 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                     width: 100,
                     height: 100,
-                    //margin: const EdgeInsets.only(left: 45),
                     decoration: BoxDecoration(
                       color: greyCustomColor,
                       borderRadius: BorderRadius.circular(20),
@@ -85,12 +84,11 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(
-                width: 20,
-              ),
               Container(
-                margin: const EdgeInsets.only(top: 10, left: 40),
+                //margin: const EdgeInsets.only(top: 10, left: 57),
+                margin: const EdgeInsets.only(top: 10),
                 child: const Text(
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -99,8 +97,12 @@ class _HomePageState extends State<HomePage> {
                   'Chcę załatwić\n sprawę',
                 ),
               ),
+              const SizedBox(
+                width: 50,
+              ),
               Container(
-                margin: const EdgeInsets.only(top: 0, left: 65),
+                //margin: const EdgeInsets.only(top: 0, left: 15),
+                margin: const EdgeInsets.only(top: 0),
                 child: const Text(
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -112,9 +114,10 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: const EdgeInsets.only(left: 57.0, top: 100),
+                margin: const EdgeInsets.only(left: 10, top: 100),
                 child: InkWell(
                   onTap: () {
                     Navigator.of(context).pushNamed(kontakt);
@@ -122,7 +125,6 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                     width: 100,
                     height: 100,
-                    //margin: const EdgeInsets.only(left: 57, top: 100),
                     decoration: BoxDecoration(
                       color: greyCustomColor,
                       borderRadius: BorderRadius.circular(20),
@@ -148,12 +150,13 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
                 width: 20,
               ),
               Container(
-                margin: const EdgeInsets.only(top: 10, left: 60),
+                margin: const EdgeInsets.only(top: 10, left: 0),
                 child: const Text(
                   textAlign: TextAlign.center,
                   style: TextStyle(

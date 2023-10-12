@@ -5,26 +5,24 @@ class DowodWaznosc extends StatefulWidget {
   const DowodWaznosc({super.key});
 
   @override
-  State<DowodWaznosc> createState() => _HomePageState();
+  State<DowodWaznosc> createState() => _DowodWaznosc();
 }
 
-class _HomePageState extends State<DowodWaznosc> {
+class _DowodWaznosc extends State<DowodWaznosc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Dowód osobisty',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
             ),

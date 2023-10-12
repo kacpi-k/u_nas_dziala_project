@@ -5,26 +5,24 @@ class NieruchomoscInfo extends StatefulWidget {
   const NieruchomoscInfo({super.key});
 
   @override
-  State<NieruchomoscInfo> createState() => _HomePageState();
+  State<NieruchomoscInfo> createState() => _NieruchomoscInfo();
 }
 
-class _HomePageState extends State<NieruchomoscInfo> {
+class _NieruchomoscInfo extends State<NieruchomoscInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Nieruchomość',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
             ),
@@ -76,6 +74,7 @@ class _HomePageState extends State<NieruchomoscInfo> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(pomoc);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

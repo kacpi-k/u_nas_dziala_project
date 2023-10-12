@@ -4,10 +4,10 @@ class BrakKartyPojazd extends StatefulWidget {
   const BrakKartyPojazd({super.key});
 
   @override
-  State<BrakKartyPojazd> createState() => _HomePageState();
+  State<BrakKartyPojazd> createState() => _BrakKartyPojazd();
 }
 
-class _HomePageState extends State<BrakKartyPojazd> {
+class _BrakKartyPojazd extends State<BrakKartyPojazd> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,6 +44,7 @@ class _HomePageState extends State<BrakKartyPojazd> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -56,6 +57,7 @@ class _HomePageState extends State<BrakKartyPojazd> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(

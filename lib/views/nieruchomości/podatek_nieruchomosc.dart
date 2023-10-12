@@ -5,26 +5,24 @@ class PodatekNieruchomosc extends StatefulWidget {
   const PodatekNieruchomosc({super.key});
 
   @override
-  State<PodatekNieruchomosc> createState() => _HomePageState();
+  State<PodatekNieruchomosc> createState() => _PodatekNieruchomosc();
 }
 
-class _HomePageState extends State<PodatekNieruchomosc> {
+class _PodatekNieruchomosc extends State<PodatekNieruchomosc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Nieruchomość',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
             ),
@@ -41,10 +39,11 @@ class _HomePageState extends State<PodatekNieruchomosc> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'Aby zapłacić podatek od nieruchomości należy:\n1.Wypełnić druk IN-1 Informacja o nieruchomościach i obiektach budowlanych wraz z odpowiednimi załącznikami (ZN-1, ZN-2, ZN-3).\n2.Złóżyć druk IN-1 w Urzędzie Miasta.\n3.Czekać na decyzję o wysokości podatku.\n4.Zapłacić podatek',
+                'Aby zapłacić podatek od nieruchomości należy:\n1.Wypełnić druk IN-1 Informacja o nieruchomościach i obiektach budowlanych wraz z odpowiednim załącznikiem.\n2.Złóżyć druk IN-1 w Urzędzie Miasta.\n3.Czekać na decyzję o wysokości podatku.\n4.Zapłacić podatek',
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -119,6 +118,7 @@ class _HomePageState extends State<PodatekNieruchomosc> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(nieruchomosciDownload);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

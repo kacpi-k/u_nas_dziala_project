@@ -1,45 +1,40 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:u_nas_dziala_project/constants/routes.dart';
 
-class ZalatwicNieruchomosci extends StatefulWidget {
-  const ZalatwicNieruchomosci({super.key});
+class NieruchomosciDownload extends StatefulWidget {
+  const NieruchomosciDownload({super.key});
 
   @override
-  State<ZalatwicNieruchomosci> createState() => _HomePageState();
+  State<NieruchomosciDownload> createState() => _NieruchomosciDownload();
 }
 
-class _HomePageState extends State<ZalatwicNieruchomosci> {
+class _NieruchomosciDownload extends State<NieruchomosciDownload> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Dokumenty do pobrania',
+          textAlign: TextAlign.center,
         ),
       ),
       body: Column(
         children: [
-          Align(
-            alignment: Alignment.center,
-            child: Image.asset('icons/herb_icon.png'),
+          const SizedBox(
+            height: 100,
+          ),
+          const Text(
+            style: TextStyle(fontSize: 24),
+            'Nieruchomości',
           ),
           const SizedBox(
             height: 50,
           ),
-          const Text(
-            style: TextStyle(fontSize: 30),
-            'Co potrzebujesz załatwić',
-          ),
-          const SizedBox(
-            height: 70,
-          ),
           ElevatedButton(
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
-              Navigator.of(context).pushNamed(coZalatwicPojazdy);
             },
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(350, 50),
@@ -54,7 +49,7 @@ class _HomePageState extends State<ZalatwicNieruchomosci> {
               ),
             ),
             child: const Text(
-              'Kupiłem nieruchomość',
+              'Formularz IN-1',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 18.0, // Dostosuj rozmiar tekstu
@@ -69,7 +64,6 @@ class _HomePageState extends State<ZalatwicNieruchomosci> {
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
-              Navigator.of(context).pushNamed(coZalatwicDokumenty);
             },
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(350, 50),
@@ -84,7 +78,7 @@ class _HomePageState extends State<ZalatwicNieruchomosci> {
               ),
             ),
             child: const Text(
-              'Sprzedałem dom/działkę',
+              'Formularz ZIN-1',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 18.0, // Dostosuj rozmiar tekstu
@@ -99,7 +93,6 @@ class _HomePageState extends State<ZalatwicNieruchomosci> {
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
-              Navigator.of(context).pushNamed(coZalatwicNieruchomosci);
             },
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(350, 50),
@@ -114,7 +107,7 @@ class _HomePageState extends State<ZalatwicNieruchomosci> {
               ),
             ),
             child: const Text(
-              'Odziedziczyłem nieruchomość',
+              'Formularz ZIN-2',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 18.0, // Dostosuj rozmiar tekstu
@@ -129,7 +122,6 @@ class _HomePageState extends State<ZalatwicNieruchomosci> {
             onPressed: () {
               // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
               // Na przykład można dodać nawigację do innej strony.
-              Navigator.of(context).pushNamed(coZalatwicNieruchomosci);
             },
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(350, 50),
@@ -144,7 +136,7 @@ class _HomePageState extends State<ZalatwicNieruchomosci> {
               ),
             ),
             child: const Text(
-              'Wydzierzawiłem nieruchomość',
+              'Formularz ZIN-3',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 18.0, // Dostosuj rozmiar tekstu

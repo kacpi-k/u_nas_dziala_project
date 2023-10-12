@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:u_nas_dziala_project/views/bilet/bilet_przed.dart';
-import 'package:u_nas_dziala_project/views/dowod_osobisty/uzupelnienie_dowod.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class DowodDokumentacja extends StatefulWidget {
   const DowodDokumentacja({super.key});
 
   @override
-  State<DowodDokumentacja> createState() => _HomePageState();
+  State<DowodDokumentacja> createState() => _DowodDokumentacja();
 }
 
-class _HomePageState extends State<DowodDokumentacja> {
+class _DowodDokumentacja extends State<DowodDokumentacja> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,10 +41,11 @@ class _HomePageState extends State<DowodDokumentacja> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                '1. Wniosek o wydanie dowodu tożsamości.\n2. Fotografia o wymiarach 35 x 45mm.\n3. Dotychczasowy dowód lub paszport (jeżeli posiadasz).',
+                '1. Wniosek o wydanie dowodu tożsamości.\n2. Fotografia o wymiarach 35 x 45mm.\n3. Dotychczasowy dowód lub paszport (jeżeli je posiadasz).',
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -58,6 +58,7 @@ class _HomePageState extends State<DowodDokumentacja> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -67,10 +68,7 @@ class _HomePageState extends State<DowodDokumentacja> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const BiletPrzed()));
+                    Navigator.of(context).pushNamed(biletPrzed);
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
@@ -101,10 +99,7 @@ class _HomePageState extends State<DowodDokumentacja> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const UzupelnienieDowod()));
+                    Navigator.of(context).pushNamed(uzupelnienieDowod);
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
@@ -137,6 +132,7 @@ class _HomePageState extends State<DowodDokumentacja> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(pomoc);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

@@ -5,17 +5,19 @@ class ZalatwiadnieSprawy extends StatefulWidget {
   const ZalatwiadnieSprawy({super.key});
 
   @override
-  State<ZalatwiadnieSprawy> createState() => _HomePageState();
+  State<ZalatwiadnieSprawy> createState() => _ZalatwiadnieSprawy();
 }
 
-class _HomePageState extends State<ZalatwiadnieSprawy> {
+class _ZalatwiadnieSprawy extends State<ZalatwiadnieSprawy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Mobilny Informator',
+          textAlign: TextAlign.center,
         ),
       ),
       body: Column(

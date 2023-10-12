@@ -42,6 +42,7 @@ class TicketService {
           t.cancel(); // Zakończ timer po 5 iteracjach
         }
       });
+      // ignore: empty_catches
     } catch (e) {}
   }
 

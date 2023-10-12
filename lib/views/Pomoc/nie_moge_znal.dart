@@ -1,29 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class PomocNieMogeZnal extends StatefulWidget {
   const PomocNieMogeZnal({super.key});
 
   @override
-  State<PomocNieMogeZnal> createState() => _HomePageState();
+  State<PomocNieMogeZnal> createState() => _PomocNieMogeZnal();
 }
 
-class _HomePageState extends State<PomocNieMogeZnal> {
+class _PomocNieMogeZnal extends State<PomocNieMogeZnal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Problem',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
             ),
@@ -56,6 +55,7 @@ class _HomePageState extends State<PomocNieMogeZnal> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(pomoc);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),
@@ -86,6 +86,8 @@ class _HomePageState extends State<PomocNieMogeZnal> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context)
+                        .pushNamedAndRemoveUntil(homePage, (route) => false);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

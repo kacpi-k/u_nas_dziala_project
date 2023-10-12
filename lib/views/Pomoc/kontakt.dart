@@ -1,41 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 
 class Kontakt extends StatefulWidget {
   const Kontakt({super.key});
 
   @override
-  State<Kontakt> createState() => _HomePageState();
+  State<Kontakt> createState() => _Kontakt();
 }
 
-class _HomePageState extends State<Kontakt> {
+class _Kontakt extends State<Kontakt> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Kontakt',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
-              height: 20,
-            ),
-            const Text(
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 35,
-              ),
-              'Kontakt',
-            ),
-            const SizedBox(
-              height: 20,
+              height: 50,
             ),
             Container(
               padding: const EdgeInsets.all(16.0),
@@ -44,6 +33,7 @@ class _HomePageState extends State<Kontakt> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
@@ -56,10 +46,11 @@ class _HomePageState extends State<Kontakt> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
-              height: 100,
+              height: 200,
             ),
             Column(
               children: [
@@ -67,6 +58,8 @@ class _HomePageState extends State<Kontakt> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context)
+                        .pushNamedAndRemoveUntil(homePage, (route) => false);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

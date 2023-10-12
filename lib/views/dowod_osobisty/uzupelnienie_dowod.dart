@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
 import 'package:u_nas_dziala_project/views/dowod_osobisty/wyrobienie_dowodu.dart';
 
 class UzupelnienieDowod extends StatefulWidget {
   const UzupelnienieDowod({super.key});
 
   @override
-  State<UzupelnienieDowod> createState() => _HomePageState();
+  State<UzupelnienieDowod> createState() => _UzupelnienieDowod();
 }
 
-class _HomePageState extends State<UzupelnienieDowod> {
+class _UzupelnienieDowod extends State<UzupelnienieDowod> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,6 +47,7 @@ class _HomePageState extends State<UzupelnienieDowod> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                
               ),
             ),
             const SizedBox(
@@ -59,6 +61,7 @@ class _HomePageState extends State<UzupelnienieDowod> {
                 style: TextStyle(
                   fontSize: 16,
                 ),
+                
               ),
             ),
             const SizedBox(
@@ -74,6 +77,7 @@ class _HomePageState extends State<UzupelnienieDowod> {
                             builder: (context) => const WyrobienieDowodu()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(biletPrzed);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),
@@ -104,6 +108,7 @@ class _HomePageState extends State<UzupelnienieDowod> {
                   onPressed: () {
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
+                    Navigator.of(context).pushNamed(pomoc);
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(350, 50),

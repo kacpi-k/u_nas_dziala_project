@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/constants/routes.dart';
-import 'package:u_nas_dziala_project/views/dowod_osobisty/dowod_zguba.dart';
-import 'package:u_nas_dziala_project/views/dowod_osobisty/wyrobienie_dowodu.dart';
 
 class Dokumenty extends StatefulWidget {
   const Dokumenty({super.key});
@@ -16,17 +14,15 @@ class _Dokumenty extends State<Dokumenty> {
     return Scaffold(
       appBar: AppBar(
         //backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(
-          child: Text('Mobilny Informator'),
+        centerTitle: true,
+        title: const Text(
+          'Dokumenty',
+          textAlign: TextAlign.center,
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset('icons/herb_icon.png'),
-            ),
             const SizedBox(
               height: 20,
             ),
@@ -39,10 +35,6 @@ class _Dokumenty extends State<Dokumenty> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const DowodZguba()));
                 // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                 // Na przykład można dodać nawigację do innej strony.
                 Navigator.of(context).pushNamed(dowodZguba);
@@ -123,6 +115,7 @@ class _Dokumenty extends State<Dokumenty> {
               ),
               child: const Text(
                 'Mój dowód osobisty stracił wazność',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 18.0, // Dostosuj rozmiar tekstu
@@ -165,10 +158,6 @@ class _Dokumenty extends State<Dokumenty> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const WyrobienieDowodu()));
                 // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                 // Na przykład można dodać nawigację do innej strony.
                 Navigator.of(context).pushNamed(dowodWyrob);

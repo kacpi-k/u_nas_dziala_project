@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:u_nas_dziala_project/views/Pomoc/kontakt.dart';
-import 'package:u_nas_dziala_project/views/home_page.dart';
+import 'package:u_nas_dziala_project/constants/routes.dart';
+
+//future plans
 
 class UmowWizyte extends StatefulWidget {
   const UmowWizyte({super.key});
 
   @override
-  State<UmowWizyte> createState() => _HomePageState();
+  State<UmowWizyte> createState() => _UmowWizyte();
 }
 
-class _HomePageState extends State<UmowWizyte> {
+class _UmowWizyte extends State<UmowWizyte> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,8 +56,7 @@ class _HomePageState extends State<UmowWizyte> {
             Column(children: [
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Kontakt()));
+                  Navigator.of(context).pushNamed(kontakt);
                 },
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(350, 50),
@@ -86,10 +86,8 @@ class _HomePageState extends State<UmowWizyte> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const HomePage()));
+                    Navigator.of(context)
+                        .pushNamedAndRemoveUntil(homePage, (route) => false);
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },
