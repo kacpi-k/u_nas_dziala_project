@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/wyrobienie_dowodu.dart';
 
 class UzupelnienieDowod extends StatefulWidget {
   const UzupelnienieDowod({super.key});
@@ -39,7 +40,8 @@ class _HomePageState extends State<UzupelnienieDowod> {
             ),
             Container(
               padding: const EdgeInsets.all(16.0),
-              child: const Text(
+              child: const Text( 
+                textAlign: TextAlign.center,
                 'Wniosek o wydanie dowodu tożsamości możesz pobrać w zakładce “Wyrobienie dowodu tożsamości” pod przyciskiem “Dokumenty do pobrania”. ',
                 style: TextStyle(
                   fontSize: 16,
@@ -52,6 +54,7 @@ class _HomePageState extends State<UzupelnienieDowod> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
+                textAlign: TextAlign.center,
                 'Jeśli ubiegasz sie o wydanie dowodu osobistego z powodu nieuprawnionego wykorzystania twoich danych osobowych (kradzież tożsamości) – uprawdopodobnij, że takie zdarzenie miało miejsce. Możesz np. dołączyć pismo lub e-mail z firmy, z którą masz podpisaną umowę, informujące cię o wycieku danych osobowych albo wydruk zamieszczonego na stronie internetowej oświadczenia informującego o wycieku danych wraz z dokumentem potwierdzającym, że firma gromadziła twoje dane osobowe.',
                 style: TextStyle(
                   fontSize: 16,
@@ -65,6 +68,10 @@ class _HomePageState extends State<UzupelnienieDowod> {
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WyrobienieDowodu()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },

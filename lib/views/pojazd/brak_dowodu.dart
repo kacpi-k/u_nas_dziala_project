@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u_nas_dziala_project/views/dowod_osobisty/wyrobienie_dowodu.dart';
 
 class BrakDowoduPojazd extends StatefulWidget {
   const BrakDowoduPojazd({super.key});
@@ -41,6 +42,10 @@ class _HomePageState extends State<BrakDowoduPojazd> {
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WyrobienieDowodu()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },

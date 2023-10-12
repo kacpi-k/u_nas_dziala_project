@@ -122,7 +122,7 @@ class _HomePageState extends State<DowodDokumentacja> {
                     ),
                   ),
                   child: const Text(
-                    'Uzupeij dokumentacje',
+                    'Uzupełnij dokumentacje',
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 18.0, // Dostosuj rozmiar tekstu

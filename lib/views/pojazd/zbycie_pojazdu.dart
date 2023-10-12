@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:u_nas_dziala_project/services/url/url_service.dart';
+import 'package:u_nas_dziala_project/views/home_page.dart';
 
 class ZbyciePojazdu extends StatefulWidget {
   const ZbyciePojazdu({super.key});
@@ -89,6 +90,10 @@ class _HomePageState extends State<ZbyciePojazdu> {
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()));
                     // Tutaj możesz dodać akcję, która ma być wykonywana po naciśnięciu przycisku.
                     // Na przykład można dodać nawigację do innej strony.
                   },

@@ -41,7 +41,7 @@ class _HomePageState extends State<PodatekNieruchomosc> {
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'Aby zapłacić podatek od nieruchomości należy:\n1.Wypełnić druk IN-1 Informacja o nieruchomościach i obiektach budowlanych wraz z odpowiednim załącznikiem.\n2.Złóżyć druk IN-1 w Urzędzie Miasta.\n3.Czekać na decyzję o wysokości podatku.\n4.Zapłacić podatek',
+                'Aby zapłacić podatek od nieruchomości należy:\n1.Wypełnić druk IN-1 Informacja o nieruchomościach i obiektach budowlanych wraz z odpowiednimi załącznikami (ZN-1, ZN-2, ZN-3).\n2.Złóżyć druk IN-1 w Urzędzie Miasta.\n3.Czekać na decyzję o wysokości podatku.\n4.Zapłacić podatek',
                 style: TextStyle(
                   fontSize: 16,
                 ),
